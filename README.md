@@ -1,7 +1,7 @@
 # Highlights
 
 * SAJ is a novel deep learning model for imputation of missing values in water quality data.
-* SAJ integrates innovative approaches: RMSNorm, Lower Triangular Masking Multi-Head Attention, and Dimension Splitting, which have not been explored in any imputation tasks before.
+* SAJ integrates innovative approaches: RMSNorm, Lower Triangular Masking Multi-Head Attention, and Dimension Splitting, never explored in any imputation tasks before.
 * The model is tested on real world water quality data of different sizes and high missing rates.
 * SAJ exhibits state-of-the-art achievements on imputation tasks of water quality data.
 
