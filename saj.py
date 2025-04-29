@@ -214,4 +214,3 @@ def build_SAJ(seq_len:int,features:int,d_model:int=256,d_v:int=256,d_inner:int=1
   saj = SAJ(features,embedded_input,positional_encoding,sajloop,firstrepresentation,attncom)
 
   return saj
-

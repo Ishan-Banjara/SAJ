@@ -94,3 +94,51 @@ e  Value has been estimated.
 
 ------------------------------------
 
+	USGSSacramento
+
+------------------------------------
+
+origin: USGS
+
+data type: downloaded type .FILE extension
+
+source of download: https://waterdata.usgs.gov/nwis/qw
+
+Station number: USGS	11447650	SACRAMENTO R A FREEPORT CA
+
+Decimal Latitude: 38.45566389	
+
+Decimal Longitude: -121.5016167	
+
+start date: 2016-10-10 00:00:00
+
+end date: 2024-10-10 23:45:00
+
+no of rows: 280608
+
+sequence length: 24
+
+interval: 15 mins
+
+no of features: 12
+
+Parameters: ['Mean water velocity (ft/s)', 'pH (standard units)', 'Gage height (ft)', 'DO (mg/l)', 'Temperature (Cels)', 'Discharge (ft3/s)', 'Turbidity (FNU)', 'Specific conductance (microsiemens/cm at 25 deg cels)', 'Salinity (parts per thousand)', 'Dissolved oxygen saturation percent (%)', 'Nitrate plus nitrite (mg/l)', 'Chlorophyll fluorescence(micrograms/l)']
+
+Overall Missing Percentage: 2.524
+
+Training data: From 2016-10-10 00:00:00 To 2022-05-18 02:30:00
+
+Validation data: 2022-05-18 02:30:00 To 2023-07-30 13:30:00
+
+Test data: 2023-07-30 13:30:00 To 2024-10-10 23:45:00
+
+Remarks provided on data for each parameters:
+
+A  Approved for publication -- Processing and review completed.
+
+P  Provisional data subject to revision.
+
+e  Value has been estimated.
+
+------------------------------------
+

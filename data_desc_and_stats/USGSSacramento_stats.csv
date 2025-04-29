@@ -1,0 +1,13 @@
+,Parameter,Min,Max,Mean,Std Dev,Skewness,Kurtosis,Missing %
+0,Mean water velocity (ft/s),-0.43,4.32,1.484,0.927,0.905,0.251,0.559
+1,pH (standard units),7.1,8.8,7.658,0.163,-0.116,0.172,0.949
+2,Gage height (ft),100.8,121.17,105.457,3.947,1.977,3.057,0.058
+3,DO (mg/l),6.7,13.0,9.487,1.043,0.222,-0.958,0.473
+4,Temperature (Cels),7.1,26.8,15.959,4.966,0.049,-1.376,0.501
+5,Discharge (ft3/s),-5360.0,100000.0,21796.678,19093.41,1.707,2.23,0.058
+6,Turbidity (FNU),0.1,313.0,12.486,18.585,4.46,30.673,0.952
+7,Specific conductance (microsiemens/cm at 25 deg cels),56.0,246.0,135.317,30.47,0.355,-0.392,0.501
+8,Salinity (parts per thousand),0.0,0.1,0.07,0.046,-0.856,-1.267,10.771
+9,Dissolved oxygen saturation percent (%),66.0,114.0,95.187,3.829,-0.878,4.089,0.523
+10,Nitrate plus nitrite (mg/l),0.01,1.19,0.117,0.109,1.935,6.112,9.845
+11,Chlorophyll fluorescence(micrograms/l),0.0,56.5,2.078,1.751,4.053,45.333,5.097

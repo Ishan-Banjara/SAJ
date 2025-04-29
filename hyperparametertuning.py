@@ -8,8 +8,8 @@ from xgboost import XGBRegressor
 from utils import masked_mae_cal
 from naive_models import read_files
 
-DATASET = 'USGSMuddyFK'           #choose from USGSMuddyFK, USGSOhioRiver
-MODEL = 'MICE_RF'               #choose from kNNImputer,  MICE_RF, MICE_XGBR, MICE_kNN, MICE_HGBR
+DATASET = 'USGSSacramento'           #choose from USGSMuddyFK, USGSOhioRiver, USGSSacramento
+MODEL = 'kNNImputer'               #choose from kNNImputer,  MICE_RF, MICE_XGBR, MICE_kNN
 NUM_ITERATIONS = 25
 CONVERGENCE_THRESHOLD = 1e-4
 MISSING_PERCENTAGE = 20

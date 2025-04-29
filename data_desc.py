@@ -12,6 +12,8 @@ def data_description(config):
     column_list = ['DateTime', 'Discharge (ft3/s)', 'Turbidity (FNU)', 'Gage height (ft)', 'Nitrate plus nitrite insitu (ml/l as nitrogen)', 'Temperature (Cels)', 'Specific conductance (microsiemens/cm at 25 deg cels)', 'DO, (mg/l)', 'pH(standard units)']
   elif dataset == 'USGSMuddyFK':
     column_list = ['DateTime', 'Gage Height (ft)', 'Discharge (ft3/s)', 'Temp (Cels)', 'DO (mg/l)', 'pH (standard units)', 'Specific conductance (microsiemens/cm at 25 deg Cels)']
+  elif dataset=='USGSSacramento':
+    column_list = ['DateTime','Mean water velocity (ft/s)','pH (standard units)','Gage height (ft)','DO (mg/l)','Temperature (Cels)','Discharge (ft3/s)','Turbidity (FNU)','Specific conductance (microsiemens/cm at 25 deg cels)','Salinity (parts per thousand)','Dissolved oxygen saturation percent (%)','Nitrate plus nitrite (mg/l)','Chlorophyll fluorescence(micrograms/l)']
   else:
     raise ValueError ('No dataset by that name')
   df.columns = column_list
@@ -28,6 +30,7 @@ def data_description(config):
   with open(file_description_path,'a') as f:
     ori_stdout = sys.stdout
     sys.stdout = f
+    print('\n------------------------------------\n')
     print(f'\t{dataset}\n')
     print('------------------------------------\n')
     print(f'origin: {origin}\n')
@@ -41,6 +44,10 @@ def data_description(config):
       print(f'Station number: USGS 03293530 MUDDY FK AT MOCKINGBIRD VALLEY RD AT LOUISVILLE,KY\n')
       print(f'Decimal Latitude: 38.27645917\n')
       print(f'Decimal Longitude: -85.693573	\n')
+    elif dataset=='USGSSacramento':
+      print(f'Station number: USGS	11447650	SACRAMENTO R A FREEPORT CA\n')
+      print(f'Decimal Latitude: 38.45566389	\n')
+      print(f'Decimal Longitude: -121.5016167	\n')
     else:
       raise ValueError('Dataset not found/available')
     print(f'start date: {start_date}\n')

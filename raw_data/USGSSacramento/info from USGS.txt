@@ -1,0 +1,43 @@
+# ---------------------------------- WARNING ----------------------------------------
+# Some of the data that you have obtained from this U.S. Geological Survey database 
+# may not have received Director's approval. Any such data values are qualified
+# as provisional and are subject to revision. Provisional data are released on the
+# condition that neither the USGS nor the United States Government may be held liable
+# for any damages resulting from its use.
+#
+# Additional info: https://waterdata.usgs.gov/provisional-data-statement/
+#
+# Contact:   gs-w_waterdata_support@usgs.gov
+# retrieved: 2025-04-08 00:20:01 EDT       (nadww01)
+#
+# Data for the following 1 site(s) are contained in this file
+#    USGS 11447650 SACRAMENTO R A FREEPORT CA
+# -----------------------------------------------------------------------------------
+#
+# Data provided for site 11447650
+#            TS   parameter     Description
+#         15731       00010     Temperature, water, degrees Celsius, [Right Bank Pump Stand]
+#         15732       72255     Mean water velocity for discharge computation, feet per second
+#         15735       00400     pH, water, unfiltered, field, standard units, BGC PROJECT, [East Fender]
+#         15737       72137     Discharge, tidally filtered, cubic feet per second
+#         15738       00065     Gage height, feet, [PRIMARY]
+#         15757       00300     Dissolved oxygen, water, unfiltered, milligrams per liter, BGC PROJECT, [East Fender]
+#         15760       00010     Temperature, water, degrees Celsius, BGC PROJECT, [East Fender]
+#         15763       63680     Turbidity, water, unfiltered, monochrome near infra-red LED light, 780-900 nm, detection angle 90 +-2.5 degrees, formazin nephelometric units (FNU), MEDIAN TS087: YSI model 6136
+#        236032       00060     Discharge, cubic feet per second
+#        236033       63680     Turbidity, water, unfiltered, monochrome near infra-red LED light, 780-900 nm, detection angle 90 +-2.5 degrees, formazin nephelometric units (FNU), BGC PROJECT, [East Fender]
+#        236034       00095     Specific conductance, water, unfiltered, microsiemens per centimeter at 25 degrees Celsius, BGC PROJECT, [East Fender]
+#        248725       32295     Dissolved organic matter fluorescence (fDOM), water, in situ, concentration estimated from reference material, micrograms per liter as quinine sulfate equivalents (QSE), BGC PROJECT, [East Fender]
+#        257748       00480     Salinity, water, unfiltered, parts per thousand, BGC PROJECT, [East Fender]
+#        259962       00301     Dissolved oxygen, water, unfiltered, percent of saturation, BGC PROJECT, [Computed]
+#        284385       99133     Nitrate plus nitrite, water, in situ, milligrams per liter as nitrogen, BGC PROJECT
+#        340268       32316     Chlorophyll fluorescence (fChl), water, in situ, concentration estimated from reference material, micrograms per liter as chlorophyll, BGC PROJECT
+#
+# Data-value qualification codes included in this output:
+#        
+#     A  Approved for publication -- Processing and review completed.
+#     P  Provisional data subject to revision.
+#     <  Actual value is known to be less than reported value.
+#     R  Records for these data have been revised. [https://nwis.waterdata.usgs.gov/usa/nwis/revision/?site_no=11447650&ts_ids=284385]
+#     e  Value has been estimated.
+# 

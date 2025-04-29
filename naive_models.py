@@ -12,8 +12,8 @@ import sys
 import random
 
 MISSING_PERCENTAGE = [30,40,50,60,70,80,90]
-DATASET='USGSOhioRIver'           #choose from USGSMuddyFK, USGSOhioRiver
-MODEL = 'MICE_kNN'              #choose from mean, locf, kNNImputer, MICE_XXX
+DATASET='USGSSacramento'           #choose from USGSMuddyFK, USGSOhioRiver, USGSSacramento
+MODEL = 'kNNImputer'              #choose from mean, locf, kNNImputer, MICE_XXX
 NUM_ITERATIONS = 10             #For MICE_XXX
 CONVERGENCE_THRESHOLD = 1e-4    #For MICE_XXX
 
@@ -88,6 +88,9 @@ def knnimputer(X_hat,X,indicating_mask):
     elif DATASET == 'USGSOhioRiver':
         n_neighbors = 200
         weights = 'uniform'
+    elif DATASET == 'USGSSacramento':
+        n_neighbors = 28
+        weights = 'uniform'
     else:
         raise ValueError
     imputer = KNNImputer(n_neighbors=n_neighbors,weights=weights)
@@ -103,13 +106,19 @@ def mice(X_hat,X,indicating_mask):
     #Print statements to debug
     # print(np.sum(mask>1))
     missing_mask = 1-mask
-    weights = "distance"
-    n_neighbors = 4
-    metric = "manhattan"
-    if DATASET == "USGSMuddyFK":
-        algorithm = "kd_tree"
-    else:
-        algorithm = "brute"
+    if DATASET == 'USGSSacramento':
+        weights = 'distance'
+        n_neighbors = 1
+        algorithm = 'auto'
+        metric = 'minkowski'
+    elif DATASET =='USGSMuddyFK' or DATASET == 'USGSOhioRiver':
+        weights = "distance"
+        n_neighbors = 4
+        metric = "manhattan"
+        if DATASET == "USGSMuddyFK":
+            algorithm = "kd_tree"
+        else:
+            algorithm = "brute"
     #define model with sqlite file
     model = KNeighborsRegressor(weights=weights,
                                 n_neighbors=n_neighbors,
@@ -151,8 +160,8 @@ if __name__=="__main__":
                                          (X, X_hat, indicating_mask)]
             # [rmse,mae,mre] = mean_replacement(X_hat,X,indicating_mask)
             # [rmse,mae,mre] = locf(X_hat,X,indicating_mask)
-            # [rmse,mae,mre] = knnimputer(X_hat,X,indicating_mask)
-            [rmse,mae,mre] = mice(X_hat,X,indicating_mask)
+            [rmse,mae,mre] = knnimputer(X_hat,X,indicating_mask)
+            # [rmse,mae,mre] = mice(X_hat,X,indicating_mask)
             RMSE_collector.append(rmse)
             MAE_collector.append(mae)
             MRE_collector.append(mre)

@@ -2,11 +2,11 @@ import torch
 
 def preprocessing_info():
     return {
-        'path':'preprocessed_data/USGSOhioRiver.csv',
-        'splitdata':[245482,300085,350688],     #[245482,300085,350688] for USGSOhioRiver, [98256,112296,140352] for USGSMuddyFK
-        'seq_len':24,  # USGSOhioRiver data and USGSMuddyFK
-        'artificial_missing_rate':0.5,    #50% missing in both Ohio and Muddy
-        'saving_dir':'USGSOhioRiver'
+        'path':'preprocessed_data/USGSSacramento.csv',
+        'splitdata':[196426,238518,280608],     #[245482,300085,350688] for USGSOhioRiver, [98256,112296,140352] for USGSMuddyFK, [196426,238518,280608] for USGSSacramento
+        'seq_len':24,  # USGSOhioRiver data and USGSMuddyFK and USGSSacramento
+        'artificial_missing_rate':0.2, #Validation missing rate is set to 20%
+        'saving_dir':'USGSSacramento'
     }
 
 def get_random_seeds():
@@ -86,6 +86,42 @@ def get_hpo_results():
                 'lr': 0.006024755519894964
             }
             }
+    elif dataset == "USGSSacramento":
+        return {
+            'BRITS':{
+                'hidden_size':512,
+                'dropout':0.2,
+                'optimizer':'adamw',
+                'lr':0.002468501440467146
+            },
+            'SAITS':{
+
+                'd_model':512,
+                'd_v':512,
+                'd_ff':128,
+                'N':4,
+                'n_inner_groups':1,
+                'h':2,
+                'dropout':0,
+                'attn_dropout':0,
+                'optimizer':'adam',
+                'lr':0.00040590219378717606
+            },
+            'SAJ': {
+                'd_model': 64,
+                'd_v': 64,
+                'd_conv': 16,
+                'd_inner': 256,
+                'N': 6,
+                'h': 8,
+                'dropout': 0,
+                'conv_dropout':0.1,
+                'attn_dropout':0,
+                'optimizer': 'adam',
+                'lr': 0.00038
+
+            }
+        }
     else:
         raise ValueError
 
@@ -94,13 +130,13 @@ def get_hpo_results():
 def get_info():
     return {
         #Model_info
-        'model_type': 'BRITS',
+        'model_type': 'SAJ',
         #Directory info
         'dataset_path': f"{preprocessing_info()['saving_dir']}/{int(preprocessing_info()['artificial_missing_rate']*100)}_datasets.h5",
         #Hyperparameters and values
-        "seq_len":24, #24 for USGSOhioRiver, 24 for USGSMuddyFK
+        "seq_len":24, #24 for USGSOhioRiver, 24 for USGSMuddyFK, 24 for USGSSacramento
         "batch_size":64,
-        "feature_num":8, #8 for USGSOhioRiver, 6 for USGSMuddyFK
+        "feature_num":12, #8 for USGSOhioRiver, 6 for USGSMuddyFK, 12 for USGSSacramento
         'num_workers':1,
         # Training info
         "epochs":100,

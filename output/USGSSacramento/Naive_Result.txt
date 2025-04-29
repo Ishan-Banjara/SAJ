@@ -1,0 +1,140 @@
+
+USGSSacramento:
+ mean:
+ Missing percentage: 30%
+MAE=0.6387 ± 0.0000, RMSE=0.8372 ± 0.0000, MRE=0.9522 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 40%
+MAE=0.6393 ± 0.0000, RMSE=0.8369 ± 0.0000, MRE=0.9529 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 50%
+MAE=0.6376 ± 0.0000, RMSE=0.8332 ± 0.0000, MRE=0.9539 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 60%
+MAE=0.6381 ± 0.0000, RMSE=0.8309 ± 0.0000, MRE=0.9547 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 70%
+MAE=0.6387 ± 0.0000, RMSE=0.8347 ± 0.0000, MRE=0.9539 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 80%
+MAE=0.6391 ± 0.0000, RMSE=0.8355 ± 0.0000, MRE=0.9539 ± 0.0000, 
+
+USGSSacramento:
+ mean:
+ Missing percentage: 90%
+MAE=0.6381 ± 0.0000, RMSE=0.8342 ± 0.0000, MRE=0.9527 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 30%
+MAE=0.9444 ± 0.0000, RMSE=1.2666 ± 0.0000, MRE=1.4081 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 40%
+MAE=0.9311 ± 0.0000, RMSE=1.2459 ± 0.0000, MRE=1.3876 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 50%
+MAE=0.9172 ± 0.0000, RMSE=1.2271 ± 0.0000, MRE=1.3722 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 60%
+MAE=0.8999 ± 0.0000, RMSE=1.2104 ± 0.0000, MRE=1.3463 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 70%
+MAE=0.8690 ± 0.0000, RMSE=1.1694 ± 0.0000, MRE=1.2979 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 80%
+MAE=0.8323 ± 0.0000, RMSE=1.1246 ± 0.0000, MRE=1.2423 ± 0.0000, 
+
+USGSSacramento:
+ locf:
+ Missing percentage: 90%
+MAE=0.7761 ± 0.0000, RMSE=1.0540 ± 0.0000, MRE=1.1589 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 30%
+MAE=0.1072 ± 0.0000, RMSE=0.3064 ± 0.0000, MRE=0.1598 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 40%
+MAE=0.1597 ± 0.0000, RMSE=0.3963 ± 0.0000, MRE=0.2380 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 50%
+MAE=0.2264 ± 0.0000, RMSE=0.4965 ± 0.0000, MRE=0.3387 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 60%
+MAE=0.3067 ± 0.0000, RMSE=0.5984 ± 0.0000, MRE=0.4588 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 70%
+MAE=0.3943 ± 0.0000, RMSE=0.7013 ± 0.0000, MRE=0.5888 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 80%
+MAE=0.4889 ± 0.0000, RMSE=0.7977 ± 0.0000, MRE=0.7297 ± 0.0000, 
+
+USGSSacramento:
+ MICE_kNN:
+ Missing percentage: 90%
+MAE=0.5743 ± 0.0000, RMSE=0.8709 ± 0.0000, MRE=0.8575 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 30%
+MAE=0.2870 ± 0.0000, RMSE=0.4490 ± 0.0000, MRE=0.4278 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 40%
+MAE=0.4543 ± 0.0000, RMSE=0.6401 ± 0.0000, MRE=0.6771 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 50%
+MAE=0.5089 ± 0.0000, RMSE=0.6989 ± 0.0000, MRE=0.7614 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 60%
+MAE=0.5166 ± 0.0000, RMSE=0.7120 ± 0.0000, MRE=0.7729 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 70%
+MAE=0.5158 ± 0.0000, RMSE=0.7169 ± 0.0000, MRE=0.7702 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 80%
+MAE=0.5182 ± 0.0000, RMSE=0.7230 ± 0.0000, MRE=0.7734 ± 0.0000, 
+
+USGSSacramento:
+ kNNImputer:
+ Missing percentage: 90%
+MAE=0.5405 ± 0.0000, RMSE=0.7483 ± 0.0000, MRE=0.8071 ± 0.0000, 
