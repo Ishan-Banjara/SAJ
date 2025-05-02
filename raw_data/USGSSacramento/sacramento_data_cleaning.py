@@ -25,6 +25,8 @@ def quarter_hourly(input_path:str,with_date:bool):
     df['datetime'] = pd.to_datetime(df['datetime'])
     df = df.set_index('datetime')
     df = df.astype('float')
+    #Some of the data were negative which are not supposed to be negative
+    df.loc[:, df.columns!='Temperature'] = df.loc[:, df.columns!='Temperature'].abs()
     quarterhourly_data = df.resample('15T').mean()
     quarterhourly_data = quarterhourly_data.reset_index()
     quarterhourly_data.set_index('datetime',inplace=True)
@@ -36,4 +38,4 @@ def quarter_hourly(input_path:str,with_date:bool):
 
 
 if __name__=="__main__":
-    quarter_hourly('data.txt',with_date=True)
+    quarter_hourly('data.txt',with_date=False)
