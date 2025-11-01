@@ -180,7 +180,7 @@ class SAJ(nn.Module):
 
   def tilde_X1(self,x,mask,device):
     x = self.firstrep(x,mask,device)
-    return self.linear(x)
+    return x
 
   def weighted_combination_block(self,attn):
     attn = attn.squeeze(dim=1)
