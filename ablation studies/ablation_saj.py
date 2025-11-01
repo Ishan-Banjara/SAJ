@@ -184,7 +184,7 @@ class SAJ(nn.Module):
     x = self.firstrep(x,mask,low_tri_mask,device)
     if relu:
       return self.linear(torch.relu(x))
-    return self.linear(x)
+    return x
 
   def weighted_combination_block(self,attn):
     attn = attn.squeeze(dim=1)
